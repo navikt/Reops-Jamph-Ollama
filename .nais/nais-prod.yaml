@@ -13,6 +13,14 @@ spec:
       rules:
         - application: reops-felgen
           namespace: team-researchops
+        - application: Jamph-Umami-Frontend
+          namespace: team-researchops
+        - application: Jamph-Rag-Api-Umami
+          namespace: team-researchops
+        - application: Jamph-Ml-Trainer
+          namespace: team-researchops
+        - application: Jamph-Mlflow
+          namespace: team-researchops
   liveness:
     path: /api/version
     initialDelay: 60

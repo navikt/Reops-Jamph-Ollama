@@ -1,0 +1,17 @@
+# Force LF line endings for shell scripts (prevents Windows CRLF issues in Docker)
+*.sh text eol=lf
+
+# Force LF for Dockerfiles
+Dockerfile* text eol=lf
+
+# Normal text files - let Git handle line endings
+*.md text
+*.yaml text
+*.yml text
+*.json text
+
+# Binary files
+*.gz binary
+*.tar binary
+*.jpg binary
+*.png binary
