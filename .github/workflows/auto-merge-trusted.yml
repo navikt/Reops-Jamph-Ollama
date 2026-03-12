@@ -7,7 +7,9 @@ on:
 jobs:
   auto-merge:
     runs-on: ubuntu-latest
-    if: github.event.pull_request.user.login == 'PerErikGronvik'
+    if: |
+      github.event.pull_request.user.login == 'PerErikGronvik' ||
+      github.event.pull_request.user.login == 'JulianNymark'
     permissions:
       pull-requests: write
       contents: write
