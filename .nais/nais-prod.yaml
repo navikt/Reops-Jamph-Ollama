@@ -40,5 +40,5 @@ spec:
     max: 3
     cpuThresholdPercentage: 80
   ingresses:
-    - "https://ollama.ansatt.nav.no"
-    - "https://ollama.intern.nav.no"
+    - "https://jamph-ollama.ansatt.nav.no"
+    - "https://jamph-ollama.intern.nav.no"
