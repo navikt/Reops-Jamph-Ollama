@@ -112,18 +112,6 @@ RUN ollama serve > /tmp/ollama.log 2>&1 & \
     timeout 900 ollama pull deepseek-coder-v2:16b && \
 
 
-    # echo "Pulling tinyllama:1.1b..." && \
-    # timeout 900 ollama pull tinyllama:1.1b && \
-    # echo "Pulling smollm2:360m..." && \
-    # timeout 900 ollama pull smollm2:360m && \
-    # echo "Pulling smollm2:1.7b..." && \
-    # timeout 900 ollama pull smollm2:1.7b && \
-    # echo "Pulling starcoder:1b..." && \
-    # timeout 900 ollama pull starcoder:1b && \
-    # echo "Pulling deepseek-coder:1.3b..." && \
-    # timeout 900 ollama pull deepseek-coder:1.3b && \
-    # echo "Pulling qwen2.5-coder:1.5b..." && \
-    # timeout 900 ollama pull qwen2.5-coder:1.5b && \
     echo "All models downloaded successfully!" && \
     # List downloaded models for verification
     ollama list && \
