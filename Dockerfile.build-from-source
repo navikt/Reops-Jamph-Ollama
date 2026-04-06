@@ -96,10 +96,13 @@ RUN ollama serve > /tmp/ollama.log 2>&1 & \
     done && \
     # Pull models sequentially with 15 minute timeout per pull
 
-    echo "Pulling qwen2.5-coder:7b..." && \
-    timeout 900 ollama pull qwen2.5-coder:7b && \
-    # echo "Pulling DeepSeek-R1-Distill-Qwen-7B..." && \
-    # timeout 900 ollama pull deepseek-r1:7b && \
+    #echo "Pulling qwen2.5-coder:7b..." && \
+    #timeout 900 ollama pull qwen2.5-coder:7b && \
+#    echo "qwen2.5-coder-7b-q4_k_m" \
+#    timeout 900 ollama pull hf.co/pererikgronvik/jamph-qwen2.5-coder-7b-q4_k_m \
+
+     echo "Pulling DeepSeek-R1-Distill-Qwen-7B..." && \
+     timeout 900 ollama pull deepseek-r1:7b && \
     # echo "Pulling Mistral 7B..." && \
     # timeout 900 ollama pull 7Bmistral:7b && \
     # echo "Pulling Qwen2.5-Coder-7B..." && \
