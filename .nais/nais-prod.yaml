@@ -23,11 +23,13 @@ spec:
           namespace: team-researchops
   liveness:
     path: /api/version
-    initialDelay: 60
+    initialDelay: 120
+    failureThreshold: 10
     port: 11434
   readiness:
     path: /api/tags
-    initialDelay: 60
+    initialDelay: 120
+    failureThreshold: 10
     port: 11434
   resources:
     limits:
@@ -37,8 +39,10 @@ spec:
       memory: 9Gi
   replicas:
     min: 1
-    max: 3
-    cpuThresholdPercentage: 80
+    max: 1
+#   max: 3
+#   cpuThresholdPercentage: 80
+
   ingresses:
     - "https://jamph-ollama.ansatt.nav.no"
     - "https://jamph-ollama.intern.nav.no"
