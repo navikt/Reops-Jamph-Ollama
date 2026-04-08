@@ -112,7 +112,7 @@ RUN ollama serve > /tmp/ollama.log 2>&1 & \
 
      echo "qwen2.5-coder-3b" && \
      timeout 900 ollama pull qwen2.5-coder:3b && \
-    echo "qwen2.5-coder-1.5b
+    echo "qwen2.5-coder-1.5b" && \
     timeout 900 ollama pull qwen2.5-coder:1.5b && \
 
 
