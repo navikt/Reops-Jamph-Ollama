@@ -111,9 +111,9 @@ RUN ollama serve > /tmp/ollama.log 2>&1 & \
     # timeout 900 ollama pull hf.co/pererikgronvik/jamph-qwen2.5-coder-7b-q4_k_m && \
 
      echo "qwen2.5-coder-3b" && \
-     timeout 900 ollama pull qwen2.5-coder:7b && \
-    # echo "qwen2.5-coder-1.5b
-    # timeout 900 ollama pull qwen2.5-coder:1.5b && \
+     timeout 900 ollama pull qwen2.5-coder:3b && \
+    echo "qwen2.5-coder-1.5b
+    timeout 900 ollama pull qwen2.5-coder:1.5b && \
 
 
 
