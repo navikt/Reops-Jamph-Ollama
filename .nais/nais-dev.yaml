@@ -34,9 +34,9 @@ spec:
     port: 11434
   resources:
     limits:
-      memory: 32Gi //12Gi for testing
+      memory: 12Gi
     requests:
-      cpu: 4000m // 500m for testing
+      cpu: 1000m
       memory: 9Gi
   replicas:
     min: 1
