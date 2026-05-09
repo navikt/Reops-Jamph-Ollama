@@ -121,10 +121,13 @@ RUN ollama serve > /tmp/ollama.log 2>&1 & \
     # echo "qwen2.5-coder-7b-instruct-q8_0" && \
     # timeout 900 ollama pull
 
-    # 08.05.2026 -new quantification
-     echo "qwen2.5-coder-7b-instruct-q8_0" && \
-     timeout 900 ollama pull hf.co/pererikgronvik/jamph-qwen2.5-coder-7b-instruct-q8_0 && \
+    # 08.05.2026 -new quantification #Was slightly slower?? slightly worse accuracy. bad tradeof.
+    # echo "qwen2.5-coder-7b-instruct-q8_0" && \
+    # timeout 900 ollama pull hf.co/pererikgronvik/jamph-qwen2.5-coder-7b-instruct-q8_0 && \
 
+    09.05.2026 - new quantification
+    echo "jamph-qwen2.5-coder-14b-instruct-q8_0" && \
+    timeout 900 ollama pull hf.co/pererikgronvik/jamph-qwen2.5-coder-14b-instruct-q8_0 && \
 
 
 

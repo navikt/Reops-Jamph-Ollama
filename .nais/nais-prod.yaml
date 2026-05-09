@@ -32,29 +32,15 @@ spec:
     initialDelay: 120
     failureThreshold: 10
     port: 11434
-  #env section is an experiment.
-  env:
-    - name: OLLAMA_NUM_PARALLEL
-      value: "1"
-    - name: OMP_NUM_THREADS
-      value: "8"
-    - name: OPENBLAS_NUM_THREADS
-      value: "8"
-    - name: MKL_NUM_THREADS
-      value: "8"
   resources:
     limits:
-      memory: 24Gi
-      #memory: 12Gi
-      cpu: 8000m
-      #no cpu limit
+      memory: 32Gi
     requests:
-      cpu: 8000m
+      cpu: 500m
       memory: 20Gi
-      #memory: 9Gi
   replicas:
     min: 1
-    max: 1
+    max: 3
 #   max: 3
 #    cpuThresholdPercentage: 80
   ingresses:
